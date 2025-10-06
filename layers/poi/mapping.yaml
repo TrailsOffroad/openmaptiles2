@@ -8,42 +8,30 @@ def_poi_mapping_aerialway: &poi_mapping_aerialway
 
 # amenity values , see http://taginfo.openstreetmap.org/keys/amenity#values
 def_poi_mapping_amenity: &poi_mapping_amenity
-  - arts_centre
   - atm
-  - bank
   - bar
   - bbq
-  - bicycle_parking
   - bicycle_rental
   - biergarten
-  - bus_station
   - cafe
+  - car_wash
   - charging_station
   - cinema
   - clinic
   - college
   - community_centre
-  - courthouse
-  - dentist
   - doctors
   - drinking_water
   - fast_food
   - ferry_terminal
   - fire_station
-  - food_court
   - fuel
   - grave_yard
   - hospital
   - ice_cream
-  - kindergarten
-  - library
   - marketplace
   - motorcycle_parking
-  - nightclub
-  - nursing_home
-  - parking
   - pharmacy
-  - place_of_worship
   - police
   - parcel_locker
   - post_box
@@ -53,17 +41,14 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - public_building
   - recycling
   - restaurant
-  - school
   - shelter
-  - swimming_pool
-  - taxi
-  - telephone
+  - shower
   - theatre
   - toilets
-  - townhall
   - university
   - veterinary
   - waste_basket
+  - water_point
 
 # barrier values , see http://taginfo.openstreetmap.org/keys/barrier#values
 def_poi_mapping_barrier: &poi_mapping_barrier
@@ -89,6 +74,15 @@ def_poi_mapping_historic: &poi_mapping_historic
   - monument
   - castle
   - ruins
+  - archaeological_site
+  - aircraft
+  - battle_field
+  - memorial
+  - memorial
+  - monument
+  - stone
+  - tomb
+  - wreck
 
 # landuse values , see http://taginfo.openstreetmap.org/keys/landuse#values
 def_poi_mapping_landuse: &poi_mapping_landuse
@@ -193,85 +187,43 @@ def_poi_mapping_shop: &poi_mapping_shop
   - accessories
   - alcohol
   - antiques
-  - art
-  - bag
   - bakery
-  - beauty
-  - bed
-  - beverages
   - bicycle
-  - books
-  - boutique
   - butcher
   - camera
   - car
   - car_repair
   - car_parts
-  - carpet
-  - charity
-  - chemist
   - chocolate
   - clothes
   - coffee
   - computer
-  - confectionery
   - convenience
-  - copyshop
-  - cosmetics
   - deli
   - delicatessen
   - department_store
   - doityourself
   - dry_cleaning
-  - electronics
-  - erotic
-  - fabric
-  - florist
-  - frozen_food
-  - furniture
-  - garden_centre
   - general
   - gift
   - greengrocer
-  - hairdresser
   - hardware
-  - hearing_aids
-  - hifi
-  - ice_cream
-  - interior_decoration
-  - jewelry
   - kiosk
-  - lamps
   - laundry
   - locksmith
   - mall
   - massage
-  - mobile_phone
   - motorcycle
-  - music
-  - musical_instrument
-  - newsagent
-  - optician
   - outdoor
-  - paint
-  - perfume
-  - perfumery
   - pet
   - photo
   - second_hand
   - shoes
   - sports
-  - stationery
   - supermarket
-  - tailor
-  - tattoo
   - ticket
   - tobacco
-  - toys
   - travel_agency
-  - video
-  - video_games
-  - watches
   - weapons
   - wholesale
   - wine
@@ -365,6 +317,8 @@ def_poi_mapping_tourism: &poi_mapping_tourism
   - attraction
   - bed_and_breakfast
   - camp_site
+  - camp_pitch
+  - alpine_hut
   - caravan_site
   - chalet
   - gallery
@@ -375,6 +329,7 @@ def_poi_mapping_tourism: &poi_mapping_tourism
   - motel
   - museum
   - picnic_site
+  - winery
   - theme_park
   - viewpoint
   - zoo
