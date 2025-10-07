@@ -79,7 +79,6 @@ def_poi_mapping_historic: &poi_mapping_historic
   - battle_field
   - memorial
   - memorial
-  - monument
   - stone
   - tomb
   - wreck

@@ -108,6 +108,8 @@ layer:
           subclass: ['atm']
         fuel:
           subclass: ['fuel', 'charging_station']
+        historical:
+          subclass: ['archaeological_site', 'aircraft', 'battle_field', 'memorial', 'memorial', 'monument', 'stone', 'tomb', 'wreck']
     subclass:
       description: |
           Original value of either the
