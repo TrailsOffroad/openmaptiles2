@@ -110,6 +110,8 @@ layer:
           subclass: ['fuel', 'charging_station']
         historical:
           subclass: ['archaeological_site', 'aircraft', 'battle_field', 'memorial', 'memorial', 'monument', 'stone', 'tomb', 'wreck']
+        water:
+          subclass: ['shower', 'water_point', 'drinking_water']
     subclass:
       description: |
           Original value of either the
