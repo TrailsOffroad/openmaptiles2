@@ -336,6 +336,7 @@ def_poi_mapping_tourism: &poi_mapping_tourism
 # waterway values , see http://taginfo.openstreetmap.org/keys/waterway#values
 def_poi_mapping_waterway: &poi_mapping_waterway
   - dock
+  - waterfall
 
 def_poi_fields: &poi_fields
   - name: osm_id
