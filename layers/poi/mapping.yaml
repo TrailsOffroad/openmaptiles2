@@ -9,26 +9,17 @@ def_poi_mapping_aerialway: &poi_mapping_aerialway
 # amenity values , see http://taginfo.openstreetmap.org/keys/amenity#values
 def_poi_mapping_amenity: &poi_mapping_amenity
   - atm
-  - bar
-  - bbq
   - bicycle_rental
-  - biergarten
-  - cafe
-  - car_wash
-  - charging_station
-  - cinema
   - clinic
   - college
   - community_centre
   - doctors
-  - drinking_water
   - fast_food
   - ferry_terminal
   - fire_station
   - fuel
   - grave_yard
   - hospital
-  - ice_cream
   - marketplace
   - motorcycle_parking
   - pharmacy
@@ -37,18 +28,10 @@ def_poi_mapping_amenity: &poi_mapping_amenity
   - post_box
   - post_office
   - prison
-  - pub
   - public_building
-  - recycling
-  - restaurant
   - shelter
-  - shower
-  - theatre
-  - toilets
   - university
   - veterinary
-  - waste_basket
-  - water_point
 
 # barrier values , see http://taginfo.openstreetmap.org/keys/barrier#values
 def_poi_mapping_barrier: &poi_mapping_barrier
@@ -63,11 +46,9 @@ def_poi_mapping_barrier: &poi_mapping_barrier
 
 # building values , see http://taginfo.openstreetmap.org/keys/building#values
 def_poi_mapping_building: &poi_mapping_building
-  - dormitory
 
 # highway values , see http://taginfo.openstreetmap.org/keys/highway#values
 def_poi_mapping_highway: &poi_mapping_highway
-  - bus_stop
 
 # historic values , see http://taginfo.openstreetmap.org/keys/historic#values
 def_poi_mapping_historic: &poi_mapping_historic
@@ -89,18 +70,12 @@ def_poi_mapping_landuse: &poi_mapping_landuse
   - brownfield
   - cemetery
   - reservoir
-  - winter_sports
 
 # leisure values , see http://taginfo.openstreetmap.org/keys/leisure#values
 def_poi_mapping_leisure: &poi_mapping_leisure
   - dog_park
-  - escape_game
   - garden
   - golf_course
-  - ice_rink
-  - hackerspace
-  - marina
-  - miniature_golf
   - park
   - pitch
   - playground
@@ -112,120 +87,39 @@ def_poi_mapping_leisure: &poi_mapping_leisure
 
 # office values , see http://taginfo.openstreetmap.org/keys/office#values
 def_poi_mapping_office: &poi_mapping_office
-  - accountant
-  - advertising_agency
-  - architect
-  - association
-  - bail_bond_agent
-  - charity
-  - company
-  - construction_company
-  - consulting
-  - cooperative
-  - courier
-  - coworking
-  - diplomatic
-  - educational_institution
-  - employment_agency
-  - energy_supplier
-  - engineer
-  - estate_agent
-  - financial
-  - financial_advisor
   - forestry
-  - foundation
-  - geodesist
   - government
-  - graphic_design
   - guide
-  - harbour_master
-  - health_insurance
-  - insurance
-  - interior_design
-  - it
-  - lawyer
-  - logistics
-  - marketing
-  - moving_company
-  - newspaper
-  - ngo
-  - notary
   - physician
-  - political_party
-  - private_investigator
-  - property_management
-  - publisher
-  - quango
-  - religion
-  - research
-  - security
-  - surveyor
-  - tax_advisor
-  - taxi
-  - telecommunication
-  - therapist
-  - translator
   - travel_agent
-  - tutoring
-  - union
   - university
-  - water_utility
-  - web_design
-  - wedding_planner
 
 # railway values , see http://taginfo.openstreetmap.org/keys/railway#values
 def_poi_mapping_railway: &poi_mapping_railway
   - halt
   - station
-  - subway_entrance
   - train_station_entrance
-  - tram_stop
 
 # shop values , see http://taginfo.openstreetmap.org/keys/shop#values
 def_poi_mapping_shop: &poi_mapping_shop
-  - accessories
-  - alcohol
-  - antiques
   - bakery
   - bicycle
   - butcher
-  - camera
   - car
   - car_repair
   - car_parts
-  - chocolate
   - clothes
   - coffee
-  - computer
-  - convenience
   - deli
-  - delicatessen
-  - department_store
-  - doityourself
-  - dry_cleaning
-  - general
-  - gift
   - greengrocer
-  - hardware
-  - kiosk
   - laundry
-  - locksmith
-  - mall
-  - massage
-  - motorcycle
   - outdoor
   - pet
-  - photo
-  - second_hand
-  - shoes
-  - sports
   - supermarket
-  - ticket
-  - tobacco
-  - travel_agency
-  - weapons
   - wholesale
-  - wine
+  - convenience
+  - hardware
+  - doityourself
 
 # sport values , see http://taginfo.openstreetmap.org/keys/sport#values
 def_poi_mapping_sport: &poi_mapping_sport
@@ -312,23 +206,15 @@ def_poi_mapping_sport: &poi_mapping_sport
 def_poi_mapping_tourism: &poi_mapping_tourism
   - alpine_hut
   - aquarium
-  - artwork
   - attraction
   - bed_and_breakfast
-  - camp_site
-  - camp_pitch
-  - alpine_hut
   - caravan_site
   - chalet
-  - gallery
   - guest_house
   - hostel
   - hotel
-  - information
   - motel
   - museum
-  - picnic_site
-  - winery
   - theme_park
   - viewpoint
   - zoo
@@ -336,7 +222,6 @@ def_poi_mapping_tourism: &poi_mapping_tourism
 # waterway values , see http://taginfo.openstreetmap.org/keys/waterway#values
 def_poi_mapping_waterway: &poi_mapping_waterway
   - dock
-  - waterfall
 
 def_poi_fields: &poi_fields
   - name: osm_id
