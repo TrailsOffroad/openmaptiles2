@@ -1,0 +1,40 @@
+tables:
+
+  # etldoc: imposm3 -> land_feature_point
+  land_feature_point:
+    type: point
+    columns:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: geometry
+    - name: name
+      key: name
+      type: string
+    - name: name_en
+      key: name:en
+      type: string
+    - name: tags
+      type: hstore_tags
+    - name: ele
+      key: ele
+      type: string
+    - name: wikipedia
+      key: wikipedia
+      type: string
+    mapping:
+      natural:
+      - valley
+      - stone
+      - rock
+      geological:
+      - sinkhole
+      - cone
+      - tor
+      - monocline
+      - dyke
+      - meteor_crater
+      - glacial_erratic
+      - volcanic_vent
+      - volcanic_lava_field
+      - volcanic_caldera_rim
