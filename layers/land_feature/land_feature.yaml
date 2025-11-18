@@ -15,13 +15,8 @@ layer:
         Use the **class** to differentiate between natural objects.
       values:
       - valley
-      - stone
-      - rock
-      - sinkhole
-      - cone
-      - tor
-      - monocline
-      - dyke
+      - saddle
+      - cliff
       - meteor_crater
       - glacial_erratic
       - volcanic_vent

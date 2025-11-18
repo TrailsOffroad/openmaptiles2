@@ -2,17 +2,17 @@
 -- etldoc: ne_10m_admin_0_countries -> land_feature_point
 CREATE OR REPLACE VIEW land_feature_point AS
 (
-SELECT pp.osm_id,
-       pp.geometry,
-       pp.name,
-       pp.name_en,
-       pp.tags,
-       pp.ele,
-       ne.iso_a2,
-       pp.wikipedia
-FROM land_feature_point pp, ne_10m_admin_0_countries ne
-WHERE ST_Intersects(pp.geometry, ne.geometry)
-    );
+    SELECT pp.osm_id,
+           pp.geometry,
+           pp.name,
+           pp.name_en,
+           pp.class,
+           pp.tags,
+           ne.iso_a2,
+           pp.wikipedia
+    FROM land_feature_point pp, ne_10m_admin_0_countries ne
+    WHERE ST_Intersects(pp.geometry, ne.geometry)
+);
 
 
 
