@@ -42,9 +42,6 @@ SELECT
     name_en,
     tags->'natural' AS class,
     tags,
-    ele::int,
-    ele_ft::int,
-    customary_ft,
     rank::int
 FROM (
          SELECT osm_id,
@@ -61,10 +58,7 @@ FROM (
                     )::int AS "rank"
          FROM land_feature_point
          WHERE geometry && bbox
-           AND (
-            (ele <> '' AND ele ~ E'^-?\\d{1,4}(\\D|$)')
-            OR name <> ''
-           )
+           AND NULLIF(name, '') IS NOT NULL
      ) AS ranked_peaks
 WHERE zoom_level >= 10
 

@@ -25,14 +25,9 @@ tables:
     mapping:
       natural:
       - valley
-      - stone
-      - rock
+      - saddle
+      - cliff
       geological:
-      - sinkhole
-      - cone
-      - tor
-      - monocline
-      - dyke
       - meteor_crater
       - glacial_erratic
       - volcanic_vent
