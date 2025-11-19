@@ -57,10 +57,39 @@ FROM (
                         ) DESC
                     )::int AS "rank"
          FROM land_feature_point
-         WHERE geometry && bbox
-           AND NULLIF(name, '') IS NOT NULL
+         WHERE geometry && bbox AND NULLIF(name, '') IS NOT NULL
      ) AS ranked_peaks
 WHERE zoom_level >= 10
+
+    UNION ALL
+
+SELECT
+    -- etldoc: land_feature_linestring -> layer_land_feature:z10_
+    osm_id,
+    geometry,
+    name,
+    name_en,
+    tags->'natural' AS class,
+    tags,
+    rank::int
+FROM (
+         SELECT osm_id,
+                geometry,
+                name,
+                COALESCE(NULLIF(name_en, ''), name) AS name_en,
+                tags,
+                row_number() OVER (
+                    PARTITION BY LabelGrid(geometry, 100 * pixel_width)
+                    ORDER BY (
+                            (CASE WHEN wikipedia <> '' THEN 10000 ELSE 0 END) +
+                            (CASE WHEN name <> '' THEN 10000 ELSE 0 END)
+                        ) DESC
+                    )::int AS "rank"
+         FROM osm_mountain_linestring
+         WHERE geometry && bbox AND NULLIF(name, '') IS NOT NULL
+     ) AS ranked_mountain_linestring
+WHERE zoom_level >= 11
+ORDER BY "rank" ASC;
 
 $$ LANGUAGE SQL STABLE
                 PARALLEL SAFE;

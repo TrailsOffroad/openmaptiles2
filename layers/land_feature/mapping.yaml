@@ -21,12 +21,32 @@ tables:
       type: string
     mapping:
       natural:
-      - valley
       - saddle
-      - cliff
       geological:
       - meteor_crater
-      - glacial_erratic
-      - volcanic_vent
-      - volcanic_lava_field
-      - volcanic_caldera_rim
+
+  # etldoc: imposm3 -> land_feature_linestring
+  land_feature_linestring:
+    type: linestring
+    columns:
+      - name: osm_id
+        type: id
+      - name: geometry
+        type: geometry
+      - name: name
+        key: name
+        type: string
+      - name: name_en
+        key: name:en
+        type: string
+      - name: tags
+        type: hstore_tags
+      - name: wikipedia
+        key: wikipedia
+        type: string
+    mapping:
+      natural:
+        - ridge
+        - cliff
+        - valley
+        - saddle

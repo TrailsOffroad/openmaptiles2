@@ -17,11 +17,8 @@ layer:
       - valley
       - saddle
       - cliff
+      - ridge
       - meteor_crater
-      - glacial_erratic
-      - volcanic_vent
-      - volcanic_lava_field
-      - volcanic_caldera_rim
     rank: Rank of the feature within one tile.
   datasource:
     geometry_field: geometry
